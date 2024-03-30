@@ -1,9 +1,24 @@
-# React + Vite
+# MERN Project Starter Kit
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repo was created using:
+-Vite
+-React
+-TailwindCSS
+-NextUI
+-React Router
+-Next.js
+-Mongo DB Server
 
-Currently, two official plugins are available:
+# Instructions
+-Fork the repo
+-Clone using SSH
+cd Vite-MERN-project-start
+$npm install
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# Vite-MERN-project-start
+To run the frontend server:
+$npm run dev
+
+To run database
+$npm run server
+
+Connect your MongoDB in server/server.js
