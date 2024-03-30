@@ -7,16 +7,13 @@ const port = 3002;
 app.use(cors());
 app.use(express.json());
 
-const p_w = "As022499";
-// const p_w = import.meta.env.VITE_MONGODB_PW;
+const dbUrl = import.meta.env.VITE_DBURL;
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
 mongoose
-  .connect(
-    `mongodb+srv://albertosierra101:${p_w}@sierratonindb.zdapufq.mongodb.net/?retryWrites=true&w=majority&appName=SierratoninDB`
-  )
+  .connect(`${dbUrl}`)
   .then(() => {
     console.log("Connected to database!");
   })
